@@ -1,0 +1,81 @@
+.section3-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 81px;
+}
+
+
+.section3-button button {
+    border: none;
+    padding: 15px 40px;
+    background-color: #0391D3;
+    color: white;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.section3-button button:hover {
+    background-color: #0271a5;
+}
+
+.section3-text h2 {
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 700;
+    color: black;
+}
+
+.section3-text h3{
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #5C5C5C;
+}
+
+
+
+@media (max-width: 1024px) {
+    .section3-container {
+        gap: 40px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section3-container {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .section3-text h2 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .section3-text h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section3-container {
+        padding: 30px 15px;
+    }
+
+    .section3-button button {
+        width: 100%;
+        padding: 12px 20px;
+    }
+
+    .section3-text h2 {
+        font-size: 20px;
+    }
+
+    .section3-text h3 {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,141 @@
+.section4-wrapper {
+    width: 100%;
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+.section4-container {
+    max-width: 1250px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+}
+
+.section4-blue-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3CA7DB;
+    z-index: 1;
+    clip-path: polygon(0% 0%, 100% 0%, 82% 100%, 0% 100%);
+}
+
+.section4-inner {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 40px;
+}
+
+.section4-content {
+    flex: 0 0 50%;
+    color: white;
+}
+
+.section4-title {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.section4-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    max-width: 480px;
+}
+
+.section4-button {
+    background-color: #F84343;
+    color: white;
+    border: none;
+    padding: 16px 45px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(248, 67, 67, 0.4);
+    transition: 0.3s ease;
+}
+
+.section4-button:hover {
+    background-color: #e33636;
+    transform: translateY(-2px);
+}
+
+.section4-images {
+    flex: 0 0 50%;
+    position: relative;
+    height: 480px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.section4-images img {
+    position: absolute;
+    bottom: 0;
+    object-fit: contain;
+}
+
+.img-dishwasher {
+    height: 357px;
+    left: 120px;
+    top: 140px;
+    z-index: 2;
+}
+
+.img-master {
+    height: 110%;
+    left: -20%;
+    z-index: 4;
+}
+
+.img-washer {
+    height: 115%;
+    top: -50px;
+    right: -130px;
+    z-index: 3;
+
+}
+
+@media (max-width: 992px) {
+    .section4-blue-bg {
+        width: 100%;
+        clip-path: none;
+    }
+
+    .section4-inner {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .section4-content {
+        flex: 0 0 100%;
+        margin-bottom: 40px;
+    }
+
+    .section4-images {
+        width: 100%;
+        height: 350px;
+        justify-content: center;
+    }
+
+    .img-washer {
+        right: 0;
+    }
+
+    .img-master {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
