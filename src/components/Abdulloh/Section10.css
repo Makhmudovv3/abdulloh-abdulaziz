@@ -1,0 +1,117 @@
+.container2 img{
+width:1920px;
+height: 455px;
+
+}
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    border-radius: 15px;
+
+}
+.container3 {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+  position: absolute;
+    top: 3220px;
+    left: 15%;
+}
+
+.contacts-card {
+  background-color: white;
+  width: 350px; 
+  padding: 50px;
+  border: 3px solid #00a0e3; 
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  text-align: left;
+  height: 420px;
+}
+
+.contacts-card h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 35px;
+  color: #333;
+}
+
+.info-group {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 35px;
+}
+
+.info-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.icon-blue {
+  color: #00a0e3;
+  font-size: 1.3rem;
+}
+
+.city-link {
+  color: #00a0e3;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.label-gray {
+  color: #999;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+.phone-block p {
+  margin: 4px 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.arrow {
+  color: #00a0e3;
+  font-size: 0.8rem;
+}
+
+.cta-button {
+  background-color: #00a0e3;
+  color: white;
+  border: none;
+  padding: 16px 40px;
+  border-radius: 50px; 
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0081b8;
+}
+
+@media (max-width: 768px) {
+  .container3 {
+display: none;
+}
+  .contacts-card {
+    width: 100%;
+    padding: 30px;
+    border-width: 2px;
+  }
+  .contacts-card h1 {
+    font-size: 2rem;
+  }
+  .container2{
+    display: none;
+  }
+}

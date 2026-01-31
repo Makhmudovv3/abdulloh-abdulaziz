@@ -1,0 +1,29 @@
+footer{
+    margin-top: 100px;                                                              
+}
+footer img{
+    width: 80px;
+    margin-bottom: 15px;
+}
+.footer-text-block p {
+  margin: 2px 0;
+  color: #777;
+  font-size: 14px;
+}
+
+.footer-copyright p {
+  color: #777;
+  font-size: 14px;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  .footer-info {
+    flex-direction: column;
+  }
+}
